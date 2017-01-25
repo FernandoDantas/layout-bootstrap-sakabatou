@@ -1,74 +1,187 @@
 <!DOCTYPE html>
   <html>
-    <head>
+      <head>
+      <meta charset="utf-8"/>
+      <title>Layout Materialize Sakabatou</title>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Folha de estilo customizada-->
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>     
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>     
     </head>
 
-    <body>
-      <div>
-        <header>
-          <nav>
-            <!-- Dropdown Structure -->
-            <ul id="dropdown1" class="dropdown-content">
-              <li><a href="#!">one</a></li>
-              <li><a href="#!">two</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">three</a></li>
-            </ul>
-            <div class="nav-wrapper blue">
-              <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-              <a href="#!" class="brand-logo">My<b>Apk</b></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-              </ul>
-              <ul class="right hide-on-med-and-down">
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-              </ul>
-              <ul id="slide-out" class="side-nav">
-                  <li><div class="userView">
-                    <div class="background">
-                      <img src="images/office.jpg">
+    <body>  
+        
+<!--       <div class="preloader-background">
+	<div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                            <div class="circle"></div>
                     </div>
-                    <a href="#!user"><img class="circle" src="images/FernandoDantas.jpg"></a>
-                    <a href="#!name"><span class="white-text name">Fernando Dantas</span></a>
-                    <a href="#!email"><span class="white-text email">fernandojrsud@hotmail.com</span></a>
-                  </div></li>
-                  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                  <li><a href="#!">Second Link</a></li>
-                  <li><div class="divider"></div></li>
-                  <li><a class="subheader">Subheader</a></li>
-                  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-            </ul>
+                    <div class="gap-patch">
+                            <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                            <div class="circle"></div>
+                    </div>
             </div>
-          </nav>
-    </header>
-</div>
+	</div>
+    </div>-->
+
+        
+        <header>
+                <nav>            
+                  <div class="nav-wrapper blue">
+                      <a href="#" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">menu</i></a>
+
+                    <a href="#!" class="brand-logo">Da<b>shboard</b></a>
+                    <ul class="right hide-on-med-and-down">                
+                      <li><a href="#!"><i class="material-icons">chat_bubble</i></a></li>
+                      <li><a href="#!"><i class="material-icons">perm_identity</i></a></li>
+                      <li><a href="#!"><i class="material-icons">input</i></a></li>
+                    </ul>            
+
+
+                    <ul class="right hide-on-med-and-down">
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                    <!-- Dropdown Structure -->
+                      <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">three</a></li>
+                      </ul>              
+                    <ul id="slide-out" class="side-nav">
+                        <li><div class="userView">
+                          <div class="background">
+                              <img alt="backgrund" src="images/lg.png">
+                          </div>
+                                <a href="#!user"><img class="circle" alt="user" src="images/FernandoDantas.jpg"></a>
+                          <a href="#!name"><span class="white-text name">Fernando Dantas</span></a>
+                          <a href="#!email"><span class="white-text email">fernandojrsud@hotmail.com</span></a>
+                        </div></li>
+                        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                        <li><a href="#!">Second Link</a></li>
+                        <li><div class="divider"></div></li>
+                        <li><a class="subheader">Subheader</a></li>
+                        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                  </ul>
+                  </div>
+                </nav>
+        </header>
+        
+        <main> 
+            <!--card stats start-->
+                    <div id="card-stats">
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  green white-text">
+                                        <p><i class="tiny material-icons">perm_identity</i> New Clients</p>
+                                        <h4>+ 566</h4>
+                                        <p><i class="tiny material-icons">play_for_work</i> 15% <span class="green-text text-lighten-5">from yesterday</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-action  green darken-2">
+                                        <div id="clients-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content purple white-text">
+                                        <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Total Sales</p>
+                                        <h4 class="card-stats-number">$8990.63</h4>
+                                        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 70% <span class="purple-text text-lighten-5">last month</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-action purple darken-2">
+                                        <div id="sales-compositebar"></div>
+
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content blue-grey white-text">
+                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Today Profit</p>
+                                        <h4 class="card-stats-number">$806.52</h4>
+                                        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 80% <span class="blue-grey-text text-lighten-5">from yesterday</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-action blue-grey darken-2">
+                                        <div id="profit-tristate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content pink lighten-2 white-text">
+                                        <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> New Invoice</p>
+                                        <h4 class="card-stats-number">1806</h4>
+                                        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-down"></i> 3% <span class="deep-purple-text text-lighten-5">from last month</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-action  pink darken-2">
+                                        <div id="invoice-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--card stats end-->
+
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red">
+                  <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                  <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                  <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                  <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                  <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div>
+        </main>
+        
+        <footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.</p>
+                <button class="btn waves-effect waves-light blue lighten-3" type="submit" name="action">Button</button> 
+              </div>               
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>            
+          <div class="footer-copyright">
+            <div class="container">
+                &#9400; 2017 Desenvolvido por <a href="http://www.fernandowebdeveloper.com.br" class="white" target="_blank">Fernando Dantas</a>
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-          $( document ).ready(function(){
-              $(".dropdown-button").dropdown();
-              $('.button-collapse').sideNav({
-                menuWidth: 300, // Default is 240
-                edge: 'left', // Choose the horizontal origin
-                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                draggable: true // Choose whether you can drag to open on touch screens
-              }
-            );
-          });
-
-      </script>
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script type="text/javascript" src="js/preloader.js"></script>
     </body>
   </html>
