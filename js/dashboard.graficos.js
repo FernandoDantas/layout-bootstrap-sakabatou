@@ -33,7 +33,7 @@ var Sakabatou = Sakabatou || {};
             
             
             
-           //Grfaico novas vendas          
+           //Gráfico novas vendas          
             Sakabatou.GraficoNovasVendas = (function(){
               
               function GraficoNovasVendas(){

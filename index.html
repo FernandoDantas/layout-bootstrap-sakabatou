@@ -15,7 +15,7 @@
 
     <body>  
         
-<!--       <div class="preloader-background">
+       <div class="preloader-background">
 	<div class="preloader-wrapper big active">
             <div class="spinner-layer spinner-blue-only">
                     <div class="circle-clipper left">
@@ -29,20 +29,16 @@
                     </div>
             </div>
 	</div>
-    </div>-->
+    </div>
 
         
         <header>
+            <div class="navbar-fixed">
             <nav>            
                   <div class="nav-wrapper blue">
                       <a href="#" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">menu</i></a>
 
-                    <a href="#!" class="brand-logo">Da<b>shboard</b></a>
-                    <ul class="right hide-on-med-and-down">                
-                      <li><a href="#!"><i class="material-icons">chat_bubble</i></a></li>
-                      <li><a href="#!"><i class="material-icons">perm_identity</i></a></li>
-                      <li><a href="#!"><i class="material-icons">input</i></a></li>
-                    </ul>            
+                    <a href="#!" class="brand-logo">Da<b>shboard</b></a>                     
 
 
                     <ul class="right hide-on-med-and-down">
@@ -55,13 +51,25 @@
                         <li><a href="#!">two</a></li>
                         <li class="divider"></li>
                         <li><a href="#!">three</a></li>
-                      </ul>              
-                    <ul id="slide-out" class="side-nav">
+                      </ul> 
+                    
+                    <ul class="right hide-on-med-and-down">                        
+                      <li><a href="#modal1"><i class="material-icons">search</i></a></li>
+                      <li><a href="#!"><i class="material-icons">chat_bubble</i></a></li>
+                      <li><a href="#!"><i class="material-icons">perm_identity</i></a></li>
+                      <li><a href="#!"><i class="material-icons">input</i></a></li>                      
+                    </ul>
+                    
+                  </div>
+                </nav>
+                </div>
+            
+            <ul id="slide-out" class="side-nav">
                         <li><div class="userView">
                           <div class="background">
                               <img alt="backgrund" src="images/lg.png">
                           </div>
-                                <a href="#!user"><img class="circle" alt="user" src="images/FernandoDantas.jpg"></a>
+                                <img class="circle" alt="user" src="images/FernandoDantas.jpg">
                           <a href="#!name"><span class="white-text name">Fernando Dantas</span></a>
                           <a href="#!email"><span class="white-text email">fernandojrsud@hotmail.com</span></a>
                         </div></li>
@@ -70,9 +78,30 @@
                         <li><div class="divider"></div></li>
                         <li><a class="subheader">Subheader</a></li>
                         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-                  </ul>
+                  </ul>        
+                  
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal bottom-sheet">
+                  <div class="modal-content">
+                    <h4>Faça sua pesquisa</h4>
+                    <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <i class="material-icons prefix">search</i>
+                              <input id="icon_prefix" type="text" class="validate">
+                              <label for="icon_prefix">Digite os termos</label>
+                            </div>                            
+                          </div>
+                        </form>
+                    </div>        
                   </div>
-                </nav>
+                  <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat blue">Pesquisar</a>
+                  </div>
+                </div>
+                <!-- End Modal-->
+            
         </header>
         
         <main> 
@@ -219,6 +248,11 @@
       <script type="text/javascript" src="js/preloader.js"></script>
       <script src="js/chart.min.js"></script>
       <script src="js/dashboard.graficos.js"></script>
-      
+      <script>
+        $(document).ready(function(){
+          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+          $('.modal').modal();
+        });  
+  </script>
     </body>
   </html>
