@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Layout Materialize Sakabatou</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+        <style type="text/css">
+            html,
+            body {
+                height: 100%;
+            }
+
+            html {
+                display: table;
+                margin: auto;
+            }
+
+            body {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .margin {
+                margin: 0 !important;
+            }
+        </style>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+    </head>
+
+    <body class="blue">        
+        <div class="row white">
+            <br/>
+            <blockquote style="border-left: 7px solid red;"><h3>Recuperar Senha</h3></blockquote>
+            <form class="col m12" action="#">
+                <div class="row">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input placeholder="Coloque seu email" id="icon_prefix" type="email" class="validate">
+                    <label for="Email">E-Mail</label>
+                  </div>                  
+                </div>       
+            </form>            
+            <div class="row">                        
+                <div class="col s6 left-align">
+                    <button type="submit" class="waves-effect btn blue-grey darken-1"><i class="material-icons left">send</i>Enviar</button>                            
+                </div> 
+             </div>                             
+                   
+        </div>  
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    </body>
+
+</html>
