@@ -1,262 +1,121 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <title>Layout Materialize Sakabatou</title>
-        <!--Import Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <!--Folha de estilo customizada-->
-        <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>     
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>     
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 3</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">   
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!--Font Awesome-->
+        <link href="assets/font/css/fontawesome-all.css" rel="stylesheet">
     </head>
+    <body>
 
-    <body>  
-
-        <div class="preloader-background">
-            <div class="preloader-wrapper big active">
-                <div class="spinner-layer spinner-blue-only">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Bootstrap Sidebar</h3>
                 </div>
+
+                <ul class="list-unstyled components">
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
+                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-success navbar-btn">
+                                <i class="fa fa-list"></i>                               
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <h2>Collapsible Sidebar Using Bootstrap 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="line"></div>
+
+                <h2>Lorem Ipsum Dolor</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="line"></div>
+
+                <h2>Lorem Ipsum Dolor</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="line"></div>
+
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
 
 
-        <header>
-            <div class="navbar-fixed">
-                <nav>            
-                    <div class="nav-wrapper blue darken-4">
-                        <a href="#" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large waves-effect waves-light blue darken-4"><i class="material-icons">menu</i></a>
-
-                        <a href="#!" class="brand-logo">Da<b>shboard</b></a>                     
 
 
-                        <ul class="right hide-on-med-and-down">
-                            <!-- Dropdown Trigger -->
-                            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-                        </ul>
-                        <!-- Dropdown Structure -->
-                        <ul id="dropdown1" class="dropdown-content">
-                            <li><a href="#!">one</a></li>
-                            <li><a href="#!">two</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#!">three</a></li>
-                        </ul> 
-
-                        <ul class="right hide-on-med-and-down">                        
-                            <li><a href="#modal1"><i class="material-icons">search</i></a></li>
-                            <li><a href="#!"><i class="material-icons">chat_bubble</i></a></li>
-                            <li><a href="#!"><i class="material-icons">perm_identity</i></a></li>
-                            <li><a href="#!"><i class="material-icons">lock_open</i></a></li>                      
-                        </ul>
-
-                    </div>
-                </nav>
-            </div>
-
-            <ul id="slide-out" class="side-nav">
-                <li><div class="userView">
-                        <div class="background">
-                            <img alt="backgrund" src="images/lg.png">
-                        </div>
-                        <img class="circle" alt="user" src="images/FernandoDantas.jpg">
-                        <a href="#!name"><span class="white-text name">Fernando Dantas</span></a>
-                        <a href="#!email"><span class="white-text email">fernandojrsud@hotmail.com</span></a>
-                    </div></li>
-                <li><a href="#!"><i class="material-icons">web</i>Exemplo de link com icone</a></li>
-                <li><a href="#!">Segundo link sem icone</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">Páginas</a></li>
-                <li><a class="waves-effect" href="examples/login.html"><i class="material-icons">vpn_key</i>Página de Login</a></li>
-                <li><a class="waves-effect" href="examples/login2.html"><i class="material-icons">vpn_key</i>Página de Login 2</a></li>
-                <li><a class="waves-effect" href="examples/forget.html"><i class="material-icons">sync_problem</i>Recuperar senha</a></li>
-                <li><a class="waves-effect" href="examples/landingPage.html"><i class="material-icons">web</i>Landing Page</a></li>
-                
-            </ul>        
-
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal bottom-sheet">
-                <div class="modal-content">
-                    <h4>Faça sua pesquisa</h4>
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">search</i>
-                                    <input id="icon_prefix" type="text" class="validate">
-                                    <label for="icon_prefix">Digite os termos</label>
-                                </div>                            
-                            </div>
-                        </form>
-                    </div>        
-                </div>
-                <div class="modal-footer">
-<!--                    <button class="modal-action modal-close waves-effect waves-green btn-flat blue">Pesquisar</button>-->
-                    <button class="modal-close waves-effect btn blue darken-1"><i class="material-icons left">search</i>Pesquisar</button> 
-                </div>
-            </div>
-            <!-- End Modal-->
-
-        </header>
-
-        <main> 
-            <!--card stats start-->
-            <div id="card-stats">
-                <div class="row">
-                    <div class="col s12 m6 l3">
-                        <div class="card z-depth-5">
-                            <div class="card-content teal darken-3 white-text">
-                                <p><i class="tiny material-icons">person add</i> Novos Clientes</p>
-                                <h4><i class="material-icons">add</i> 566</h4>
-                                <p><i class="tiny material-icons">call_made</i> 15% <span class="green-text text-lighten-5">Útimo dia</span>
-                                </p>
-                            </div>
-                            <div class="card-action teal darken-4">                                   
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <div class="card z-depth-5">
-                            <div class="card-content purple darken-3 white-text">
-                                <p><i class="tiny material-icons">shopping_cart</i> Vendas totais</p>
-                                <h4>R$ 8990.63</h4>
-                                <p><i class="tiny material-icons">call_received</i> 70% <span class="purple-text text-lighten-5">Último mês</span>
-                                </p>
-                            </div>
-                            <div class="card-action purple darken-4">
-                                <div id="sales-compositebar"></div>
-                            </div>
-                        </div>
-                    </div>                            
-                    <div class="col s12 m6 l3">
-                        <div class="card z-depth-5">
-                            <div class="card-content blue-grey darken-3 white-text">
-                                <p><i class="tiny material-icons">payment</i> Lucro atual</p>
-                                <h4>R$ 806.52</h4>
-                                <p><i class="tiny material-icons">call_missed</i> 80% <span class="blue-grey-text text-lighten-5">Útimo dia</span>
-                                </p>
-                            </div>
-                            <div class="card-action blue-grey darken-4">
-                                <div id="profit-tristate"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <div class="card z-depth-5">
-                            <div class="card-content orange darken-3 white-text">
-                                <p><i class="tiny material-icons">note</i> Novas faturas</p>
-                                <h4><i class="material-icons">add</i> 1806</h4>
-                                <p><i class="tiny material-icons">call_missed</i> 3% <span class="deep-purple-text text-lighten-5">Último mês</span>
-                                </p>
-                            </div>
-                            <div class="card-action  orange darken-4">
-                                <div id="invoice-line"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!--card stats end-->
-
-            <!--Cards com Graficos-->
-
-            <div id="work-collections">
-                <div class="row">
-                    <div class="col s12 m12 l6">
-                        <ul id="projects-collection" class="collection">
-                            <li class="collection-item avatar">
-                                <i class="material-icons circle light-blue darken-2">person_pin</i>
-                                <span class="collection-header">Clientes</span>                                        
-                            </li>              
-
-                            <li class="collection-item">
-                                <div class="row">
-                                    <canvas id="graficoNovosClientes"></canvas>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s12 m12 l6">
-                        <ul id="issues-collection" class="collection">
-                            <li class="collection-item avatar">
-                                <i class="material-icons circle red darken-2">shop</i>
-                                <span class="collection-header">Vendas</span>   
-                            </li>
-                            <li class="collection-item">
-                                <div class="row">
-                                    <canvas id="graficoNovasVendas"></canvas>
-                                </div>    
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!--Fim Cards com Graficos-->
-
-            <div class="fixed-action-btn">
-                <a class="btn-floating btn-large red">
-                    <i class="large material-icons">add</i>
-                </a>
-                <ul>
-                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-                </ul>
-            </div>
-        </main>
-
-        <footer class="page-footer blue darken-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
-                        <p class="grey-text text-lighten-4">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.</p>
-                        <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Button</button> 
-                    </div>               
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>            
-            <div class="footer-copyright">
-                <div class="container">
-                    &#9400; 2017 Desenvolvido por <a href="http://www.fernandowebdeveloper.com.br" class="white" target="_blank">Fernando Dantas</a>
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>
-        </footer>
 
 
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-        <script type="text/javascript" src="js/preloader.js"></script>
-        <script src="js/chart.min.js"></script>
-        <script src="js/dashboard.graficos.js"></script>
-        <script>
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
             $(document).ready(function () {
-                // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-                $('.modal').modal();
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
             });
         </script>
     </body>
