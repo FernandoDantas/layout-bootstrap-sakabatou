@@ -1,7 +1,0 @@
-/*Mantem o footer sempre em baixo*/
-body {display: flex; min-height: 100vh; flex-direction: column;}
-main {flex: 1 0 auto;}
-
-/*Configuração do preloader*/
-.preloader-background {display: flex; align-items: center; justify-content: center; background-color: #eee; position: fixed;
-    z-index: 100; top: 0; left: 0; right: 0; bottom: 0;}
