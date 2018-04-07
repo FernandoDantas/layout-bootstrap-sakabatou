@@ -48,6 +48,24 @@ a, a:hover, a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+:root{
+	--green:   #28a745;
+	--green_h: #218838;
+	--green_l: #61ddbc;
+	
+	--blue: #4fc0e8;
+	--blue_h: #3aadd9;
+	--blue_l: 66d4f1;
+	
+	--yellow: #fdcd56;
+	--yellow_h: #f5b945;
+	--yellow_l: #fbd277;
+	
+	--red: #eb5463;
+	--red_h: #d94452;
+	--red_l: #f76c82;
+}
+
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -56,7 +74,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: var(--green);
     color: #fff;
     transition: all 0.3s;
 }
@@ -67,12 +85,12 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: var(--green_h);
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #ffffff;
 }
 
 #sidebar ul p {
@@ -86,13 +104,13 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: var(--green_h);
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: var(--green_h);
 }
 
 
@@ -101,22 +119,21 @@ a[data-toggle="collapse"] {
 }
 
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
+    content: '\25bc';
     display: block;
     position: absolute;
-    right: 20px;
-    font-family: 'Glyphicons Halflings';
+    right: 20px;    
     font-size: 0.6em;
 }
 a[aria-expanded="true"]::before {
-    content: '\e260';
+    content: '\25b2';
 }
 
 
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: var(--green_h);
 }
 
 ul.CTAs {
@@ -133,11 +150,11 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: var(--green);
 }
 
 a.article, a.article:hover {
-    background: #6d7fcc !important;
+    background: var(--green_h) !important;
     color: #fff !important;
 }
 
