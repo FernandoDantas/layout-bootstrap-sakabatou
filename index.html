@@ -1,143 +1,203 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Layout-Bootstrap-sakabatou</title>
+<title>Layout-Bootstrap-sakabatou</title>
 
-         <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--Font Awesome-->
-        <link href="assets/font/css/fontawesome-all.css" rel="stylesheet">
-    </head>
-    <body>
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<!--Font Awesome-->
+<link href="assets/font/css/fontawesome-all.css" rel="stylesheet">
+<!-- Nice select -->
+<link href="assets/css/nice-select.css" rel="stylesheet">
+</head>
+<body>
 
-        <div class="wrapper">
-            <!-- Sidebar Holder -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>Sakabatou</h3>
-                    <strong>SK</strong>
-                </div>
+	<div class="wrapper">
+		<!-- Sidebar Holder -->
+		<nav id="sidebar">
+			<div class="sidebar-header">
+				<h3>Sakabatou</h3>
+				<strong>SK</strong>
+			</div>
 
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
-                            <i class="fa fa-home"></i>
-                            Home
-                        </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-briefcase"></i>
-                            About
-                        </a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
-                            <i class="fa fa-clone"></i>
-                            Pages
-                        </a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-link"></i>
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-paperclip"></i>
-                            FAQ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-envelope"></i>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+			<ul class="list-unstyled components">
+				<li class="active"><a href="#homePerfil" data-toggle="collapse"
+					aria-expanded="false"><img class="img-responsive user-profile"
+						src="assets/img/FernandoDantas.jpg" alt="Fernando Dantas"
+						title="Fernando Dantas">Fernando Dantas</a>
+					<ul class="collapse list-unstyled" id="homePerfil">
+						<li><a href="#"><i class="fa fa-sign-in-alt"></i> Sair</a></li>
+						<li><a href="#"><i class="fa fa-user"></i> Perfil</a></li>
+					</ul></li>
+				<li><a href="#homeSubmenu" data-toggle="collapse"
+					aria-expanded="false"> <i class="fa fa-home"></i> Home
+				</a>
+					<ul class="collapse list-unstyled" id="homeSubmenu">
+						<li><a href="#">Home 1</a></li>
+						<li><a href="#">Home 2</a></li>
+						<li><a href="#">Home 3</a></li>
+					</ul></li>
+				<li><a href="#"> <i class="fa fa-briefcase"></i> About
+				</a> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+						<i class="fa fa-clone"></i> Pages
+				</a>
+					<ul class="collapse list-unstyled" id="pageSubmenu">
+						<li><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3</a></li>
+					</ul></li>
+				<li><a href="#"> <i class="fa fa-link"></i> Portfolio
+				</a></li>
+				<li><a href="#"> <i class="fa fa-paperclip"></i> FAQ
+				</a></li>
+				<li><a href="#"> <i class="fa fa-envelope"></i> Contact
+				</a></li>
+			</ul>
 
-                <ul class="list-unstyled CTAs">
-                    <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
-                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
-                </ul>
-            </nav>
+			<ul class="list-unstyled CTAs">
+				<li><a
+					href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+					class="download">Download source</a></li>
+				<li><a href="https://bootstrapious.com/p/bootstrap-sidebar"
+					class="article">Back to article</a></li>
+			</ul>
+		</nav>
 
-            <!-- Page Content Holder -->
-            <div id="content">
+		<!-- Page Content Holder -->
+		<div id="content">
 
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
 
-                        <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <i class="fa fa-bars"></i>
-                                
-                            </button>
-                        </div>
+					<div class="navbar-header">
+						<button type="button" id="sidebarCollapse"
+							class="btn btn-info navbar-btn">
+							<i class="fa fa-bars"></i>
 
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#"><img class="img-responsive user-profile" src="assets/img/FernandoDantas.jpg" alt="Fernando Dantas" title="Fernando Dantas"></a></li>
-                                <li><a href="#"> Fernando Dantas <i class="fa fa-angle-down"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+						</button>
+					</div>
 
-                <h2>Collapsible Sidebar Using Bootstrap 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="collapse navbar-collapse"
+						id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="" style="cursor: default;">Bem Vindo!!
+									Fernando Dantas</a></li>
+							<li><a href="#"><i class="fa fa-sign-in-alt"></i> Sair</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 
-                <div class="line"></div>
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Card Projects -->
+					<div class="col-sm-3">
+						<div class="sk-box">
+							<div class="sk-box__icon">
+								<i class="fas  fa-credit-card  fa-3x"></i>
+							</div>
+							<div class="sk-box__value">R$983.433,20</div>
+							<div class="sk-box__title">Faturamento total</div>
+						</div>
+					</div>
 
-                <h2>Lorem Ipsum Dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<!-- Card Projects -->
+					<div class="col-sm-3">
+						<div class="sk-box">
+							<div class="sk-box__icon">
+								<i class="fas  fa-users  fa-3x"></i>
+							</div>
+							<div class="sk-box__value">1.298</div>
+							<div class="sk-box__title">Total de clientes</div>
+						</div>
+					</div>
 
-                <div class="line"></div>
+					<!-- Card Projects -->
+					<div class="col-sm-3">
+						<div class="sk-box">
+							<div class="sk-box__icon">
+								<i class="fas  fa-battery-empty  fa-3x"></i>
+							</div>
+							<div class="sk-box__value">123</div>
+							<div class="sk-box__title">Produtos sem estoque</div>
+						</div>
+					</div>
 
-                <h2>Lorem Ipsum Dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<!-- Card Projects -->
+					<div class="col-sm-3">
+						<div class="sk-box">
+							<div class="sk-box__icon">
+								<i class="fas  fa-truck  fa-3x"></i>
+							</div>
+							<div class="sk-box__value">3.344</div>
+							<div class="sk-box__title">Estoque total</div>
+						</div>
+					</div>
 
-                <div class="line"></div>
+				</div>
 
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
+				<div class="line"></div>
+
+				<h2>Lorem Ipsum Dolor</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="line"></div>
+
+				<h2>Lorem Ipsum Dolor</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="line"></div>
+
+				<h3>Lorem Ipsum Dolor</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
 
 
 
 
 
-        <!-- jQuery CDN -->
-         <script src="assets/js/jquery.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="assets/js/bootstrap.min.js"></script>
+		<!-- jQuery CDN -->
+		<script src="assets/js/jquery.js"></script>
+		<!-- Bootstrap Js CDN -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Nice Select http://hernansartorio.com/jquery-nice-select/ -->
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#sidebarCollapse').on('click', function() {
+					$('#sidebar').toggleClass('active');
+				});
+			});
 
-         <script type="text/javascript">
-             $(document).ready(function () {
-                 $('#sidebarCollapse').on('click', function () {
-                     $('#sidebar').toggleClass('active');
-                 });
-             });
-         </script>
-    </body>
+			//Nice Select
+			$(document).ready(function() {
+				$('select').niceSelect();
+			});
+		</script>
+</body>
 </html>
