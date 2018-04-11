@@ -207,6 +207,14 @@ a.article, a.article:hover {
 }
 
 
+.user-profile{
+	width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    margin-right: -20px;
+   
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
