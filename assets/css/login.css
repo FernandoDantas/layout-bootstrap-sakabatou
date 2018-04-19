@@ -2,7 +2,7 @@ body,
 html{
 	width: 100%;
 	height: 100%;
-	background: #3ca2e0;
+	background: #5bc0de;
 }
 
 .home{
@@ -25,6 +25,7 @@ html{
 	display: fkex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .in{
@@ -35,4 +36,44 @@ html{
 	width: 90px;
 	height: 90px;
 	border: 3px solid #94979c;
+	color:#94979c;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	padding: 2px;
+	line-height: 90px;
+}
+
+.logo h1{
+	font-weight: 700;
+	font-size: 40px;
+}
+
+input[type=text], input[type=password]{
+	background: 0 0;
+	border: 0;
+	box-shadow: none;	
+	border-bottom: 1px solid #afb5c1;
+	border-radius: 0;
+}
+
+.lg{
+	margin-bottom: 20px;
+}
+
+.input-group-addon{
+	background: 0 0;
+	border: 0;
+	color: #afb5c1;
+	
+}
+
+.btn-info{
+	border: 0;
+	background: #ff3366;
+	border-radius: 30px; 
+}
+
+input[type=text], input[type=password]:focus {
+	box-shadow: none !important;
 }
